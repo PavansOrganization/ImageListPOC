@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ImageListViewController.swift
 //  ImageListPOC
 //
 //  Created by test on 15/01/19.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ImageListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
-
 }
-
