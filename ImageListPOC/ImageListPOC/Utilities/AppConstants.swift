@@ -17,6 +17,7 @@ class AppConstants {
     static let connectionError = "Please check your network connection!"
     static let alertTitle = "Alert"
     static let alertOK = "Ok"
+    
     // MARK: - UI Constants
     static let screenWidth = UIScreen.main.bounds.width
     static let screenHeight = UIScreen.main.bounds.height

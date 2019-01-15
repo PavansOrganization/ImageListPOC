@@ -27,6 +27,8 @@
 		52A6B3A721EDD613000EE38E /* DynamicCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3A521EDD58F000EE38E /* DynamicCellSize.swift */; };
 		52A6B3AB21EDDCC7000EE38E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3AA21EDDCC7000EE38E /* Extensions.swift */; };
 		52A6B3AD21EDDFCA000EE38E /* ImageDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3AC21EDDFCA000EE38E /* ImageDataTests.swift */; };
+		52A6B3B021EE0E7D000EE38E /* DownloadImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3AF21EE0E7D000EE38E /* DownloadImageTest.swift */; };
+		52A6B3B221EE0EE2000EE38E /* ImageDataAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3B121EE0EE2000EE38E /* ImageDataAPITest.swift */; };
 		54015C945494A29372365C2A /* Pods_ImageListPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF740DF2A3E2012CA1553AB /* Pods_ImageListPOC.framework */; };
 		90C6AD75164A7341C0BBE338 /* Pods_ImageListPOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57129AE96D8871410E2C0D7 /* Pods_ImageListPOCTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		52A6B3A521EDD58F000EE38E /* DynamicCellSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCellSize.swift; sourceTree = "<group>"; };
 		52A6B3AA21EDDCC7000EE38E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		52A6B3AC21EDDFCA000EE38E /* ImageDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataTests.swift; sourceTree = "<group>"; };
+		52A6B3AF21EE0E7D000EE38E /* DownloadImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageTest.swift; sourceTree = "<group>"; };
+		52A6B3B121EE0EE2000EE38E /* ImageDataAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataAPITest.swift; sourceTree = "<group>"; };
 		7A23EC17A0D36593C4591A5F /* Pods-ImageListPOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageListPOCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageListPOCTests/Pods-ImageListPOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C293F482D3DB5D352397EF34 /* Pods-ImageListPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageListPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageListPOC/Pods-ImageListPOC.release.xcconfig"; sourceTree = "<group>"; };
 		C6974BD21AC3D33BCE122E3C /* Pods-ImageListPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageListPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageListPOC/Pods-ImageListPOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				523FB65221ED976A00C29B3E /* ImageListPOCTests.swift */,
 				523FB65421ED976A00C29B3E /* Info.plist */,
 				52A6B3AC21EDDFCA000EE38E /* ImageDataTests.swift */,
+				52A6B3AF21EE0E7D000EE38E /* DownloadImageTest.swift */,
+				52A6B3B121EE0EE2000EE38E /* ImageDataAPITest.swift */,
 			);
 			path = ImageListPOCTests;
 			sourceTree = "<group>";
@@ -449,8 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A6B3B221EE0EE2000EE38E /* ImageDataAPITest.swift in Sources */,
 				523FB65321ED976A00C29B3E /* ImageListPOCTests.swift in Sources */,
 				52A6B3AD21EDDFCA000EE38E /* ImageDataTests.swift in Sources */,
+				52A6B3B021EE0E7D000EE38E /* DownloadImageTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
