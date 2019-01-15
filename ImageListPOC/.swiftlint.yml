@@ -1,0 +1,9 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Pods
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 285
+disabled_rules:
+- trailing_whitespace
+- redundant_string_enum_value
+- identifier_name
