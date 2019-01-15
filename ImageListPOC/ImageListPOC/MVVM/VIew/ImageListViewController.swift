@@ -86,7 +86,7 @@ class ImageListViewController: UIViewController {
             DispatchQueue.main.async {
                 self.activityView.stopAnimating()
                 self.title = self.imageDataViewModel.getScreenTitle()
-                self.cellsSizes = CellSizeProvider.provideSizes(items: self.imageDataViewModel.rowsArray, flowType: .pinterest)
+                self.cellsSizes = CellSizeProvider.provideSizes(items: self.imageDataViewModel.rowsArray)
                 self.collectionView.reloadData()
             }
         }

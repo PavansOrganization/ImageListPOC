@@ -40,7 +40,7 @@ public class ContentDynamicLayout: UICollectionViewFlowLayout {
         super.prepare()
         
         cachedLayoutAttributes.removeAll()
-        calculateCollectionViewCellsFrames()
+        calculateCellFrames()
     }
     
     override public func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -59,7 +59,7 @@ public class ContentDynamicLayout: UICollectionViewFlowLayout {
         }
     }
     
-    public func calculateCollectionViewCellsFrames() {
+    public func calculateCellFrames() {
         fatalError("Method must be overriden")
     }
     
@@ -75,10 +75,10 @@ public class ContentDynamicLayout: UICollectionViewFlowLayout {
 public class PinterestStyleFlowLayout: ContentDynamicLayout {
     private var previousCellsYOffset = [CGFloat]()
     
-    public var columnsCount: Int = 1// 3
+    public var columnsCount: Int = 1
     let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
 
-    override public func calculateCollectionViewCellsFrames() {
+    override public func calculateCellFrames() {
         guard let contentCollectionView = collectionView, delegate != nil else {
             return
         }
@@ -142,27 +142,21 @@ public class PinterestStyleFlowLayout: ContentDynamicLayout {
     }
 }
 
-enum FlowLayoutType: Int {
-    case pinterest
-}
-
 class CellSizeProvider {
-    private static let kMinCellSize: UInt32 = 50
-    private static let kMaxCellSize: UInt32 = 100
     
-    class func provideSizes(items: [Rows], flowType: FlowLayoutType) -> [CGSize] {
+    class func provideSizes(items: [Rows]) -> [CGSize] {
         var cellSizes = [CGSize]()
         var size: CGSize = .zero
         
         for item in items {
-            size = CellSizeProvider.providePinterestCellSize(item: item.description ?? "")
+            size = CellSizeProvider.provideCellSize(item: item.description ?? "")
             cellSizes.append(size)
         }
         
         return cellSizes
     }
     
-    private class func providePinterestCellSize(item: String) -> CGSize {
+    private class func provideCellSize(item: String) -> CGSize {
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         var extraHeight: CGFloat = 150
         
@@ -173,8 +167,7 @@ class CellSizeProvider {
             extraHeight = 100
         }
         
-        let width = CGFloat(arc4random_uniform(kMaxCellSize) + kMinCellSize)
-        let height = item.height(withConstrainedWidth: 250, font: .systemFont(ofSize: 17)) + CGFloat(kMinCellSize)
-        return CGSize(width: width, height: height + extraHeight) //150
+        let height = item.height(withConstrainedWidth: 300, font: .systemFont(ofSize: 17)) + CGFloat(50)
+        return CGSize(width: 00, height: height + extraHeight)
     }
 }
