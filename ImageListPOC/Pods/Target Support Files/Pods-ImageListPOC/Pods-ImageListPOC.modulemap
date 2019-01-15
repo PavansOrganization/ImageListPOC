@@ -1,0 +1,6 @@
+framework module Pods_ImageListPOC {
+  umbrella header "Pods-ImageListPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
