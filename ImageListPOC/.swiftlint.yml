@@ -4,6 +4,5 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
 # implicitly
 line_length: 285
 disabled_rules:
-- trailing_whitespace
 - redundant_string_enum_value
 - identifier_name

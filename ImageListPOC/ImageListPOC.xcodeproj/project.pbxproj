@@ -28,6 +28,7 @@
 		52A6B3A321EDD41F000EE38E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3A221EDD41F000EE38E /* ImageCollectionViewCell.swift */; };
 		52A6B3A421EDD4BD000EE38E /* ImageDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3A021EDD3B1000EE38E /* ImageDataViewModel.swift */; };
 		52A6B3A721EDD613000EE38E /* DynamicCellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3A521EDD58F000EE38E /* DynamicCellSize.swift */; };
+		52A6B3AB21EDDCC7000EE38E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6B3AA21EDDCC7000EE38E /* Extensions.swift */; };
 		54015C945494A29372365C2A /* Pods_ImageListPOC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF740DF2A3E2012CA1553AB /* Pods_ImageListPOC.framework */; };
 		90C6AD75164A7341C0BBE338 /* Pods_ImageListPOCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57129AE96D8871410E2C0D7 /* Pods_ImageListPOCTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		52A6B3A021EDD3B1000EE38E /* ImageDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataViewModel.swift; sourceTree = "<group>"; };
 		52A6B3A221EDD41F000EE38E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		52A6B3A521EDD58F000EE38E /* DynamicCellSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCellSize.swift; sourceTree = "<group>"; };
+		52A6B3AA21EDDCC7000EE38E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7A23EC17A0D36593C4591A5F /* Pods-ImageListPOCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageListPOCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageListPOCTests/Pods-ImageListPOCTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C293F482D3DB5D352397EF34 /* Pods-ImageListPOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageListPOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageListPOC/Pods-ImageListPOC.release.xcconfig"; sourceTree = "<group>"; };
 		C6974BD21AC3D33BCE122E3C /* Pods-ImageListPOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageListPOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageListPOC/Pods-ImageListPOC.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 		523FB66221ED9BAB00C29B3E /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				52A6B3A921EDDCA9000EE38E /* Class Extension */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -237,6 +240,14 @@
 				52A6B39621EDD2C3000EE38E /* ImageDataAPI.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		52A6B3A921EDDCA9000EE38E /* Class Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52A6B3AA21EDDCC7000EE38E /* Extensions.swift */,
+			);
+			path = "Class Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +437,7 @@
 				52A6B39921EDD2EF000EE38E /* AppConstants.swift in Sources */,
 				52A6B39521EDD2A6000EE38E /* Network.swift in Sources */,
 				523FB66A21ED9BFF00C29B3E /* ImageListViewController.swift in Sources */,
+				52A6B3AB21EDDCC7000EE38E /* Extensions.swift in Sources */,
 				52A6B39F21EDD387000EE38E /* Facts.swift in Sources */,
 				52A6B39321EDD28B000EE38E /* WebService.swift in Sources */,
 				52A6B39D21EDD36E000EE38E /* Rows.swift in Sources */,
