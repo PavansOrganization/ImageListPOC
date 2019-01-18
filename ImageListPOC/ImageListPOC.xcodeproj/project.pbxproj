@@ -45,13 +45,13 @@
 
 /* Begin PBXFileReference section */
 		4AF740DF2A3E2012CA1553AB /* Pods_ImageListPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageListPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		520665A521F1AF8E00875739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520665A621F1AFA300875739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523FB63A21ED976800C29B3E /* ImageListPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageListPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		523FB64421ED976A00C29B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523FB64721ED976A00C29B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		523FB64921ED976A00C29B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523FB64E21ED976A00C29B3E /* ImageListPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageListPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		523FB65221ED976A00C29B3E /* ImageListPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListPOCTests.swift; sourceTree = "<group>"; };
-		523FB65421ED976A00C29B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		523FB66421ED9BAC00C29B3E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523FB66921ED9BFF00C29B3E /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
 		523FB66C21EDA09D00C29B3E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 				523FB66521ED9BAC00C29B3E /* Utilities */,
 				523FB64421ED976A00C29B3E /* Assets.xcassets */,
 				523FB64621ED976A00C29B3E /* LaunchScreen.storyboard */,
-				523FB64921ED976A00C29B3E /* Info.plist */,
+				520665A621F1AFA300875739 /* Info.plist */,
 			);
 			path = ImageListPOC;
 			sourceTree = "<group>";
@@ -157,8 +157,8 @@
 		523FB65121ED976A00C29B3E /* ImageListPOCTests */ = {
 			isa = PBXGroup;
 			children = (
+				520665A521F1AF8E00875739 /* Info.plist */,
 				523FB65221ED976A00C29B3E /* ImageListPOCTests.swift */,
-				523FB65421ED976A00C29B3E /* Info.plist */,
 				52A6B3AC21EDDFCA000EE38E /* ImageDataTests.swift */,
 				52A6B3AF21EE0E7D000EE38E /* DownloadImageTest.swift */,
 				52A6B3B121EE0EE2000EE38E /* ImageDataAPITest.swift */,
