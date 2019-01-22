@@ -20,13 +20,24 @@ class ImageDataAPITest: XCTestCase {
     override func tearDown() {
         imageDataAPI = nil
     }
+    
     /*
      Facts data from the given URL is receiving or not.
      */
-    func testImageDataAPI() {
+    func testFactDataAPI() {
+        let factExpectation  = expectation(description: "Get facts data")
+        
         imageDataAPI.getFactsData { (facts, message) in
-            XCTAssertNil(message)
-            XCTAssertNotNil(facts)
+            
+            XCTAssertNil(message,"Message should be nil")
+            XCTAssertNotNil(facts, "Facts should not be nil")
+            factExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 10) { error in
+            if let error = error {
+                XCTFail("error: \(error)")
+            }
         }
     }
 }

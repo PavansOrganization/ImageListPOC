@@ -45,12 +45,12 @@ class ImageListPOCTests: XCTestCase {
         //Checking for activity indicator
         
         imageListViewController.loadViewIfNeeded()
-   
+        
         XCTAssertEqual(imageListViewController.activityView.center, imageListViewController.view.center, "activityView should be center to superview")
         XCTAssertEqual(imageListViewController.activityView.color, UIColor.black, "activityView should be black in color")
         
         XCTAssertTrue(imageListViewController.activityView.hidesWhenStopped, "activityView should be gets stopped, when hides.")
-
+        
         if Network.connectedToNetwork() { // Checking for activity Indicator is animating or not.
             XCTAssertTrue(imageListViewController.activityView.isAnimating, "activityIndicatorView should be animating")
         } else {
