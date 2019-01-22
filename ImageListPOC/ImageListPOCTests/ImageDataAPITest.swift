@@ -28,9 +28,13 @@ class ImageDataAPITest: XCTestCase {
         let factExpectation  = expectation(description: "Get facts data")
         
         imageDataAPI.getFactsData { (facts, message) in
-            
-            XCTAssertNil(message,"Message should be nil")
-            XCTAssertNotNil(facts, "Facts should not be nil")
+            if Network.connectedToNetwork() {
+                XCTAssertNil(message,"Message should be nil")
+                XCTAssertNotNil(facts, "Facts should not be nil")
+            } else {
+                XCTAssertNil(facts, "Facts should be nil")
+                XCTAssertNotNil(message,"Message not should be nil")
+            }
             factExpectation.fulfill()
         }
         
